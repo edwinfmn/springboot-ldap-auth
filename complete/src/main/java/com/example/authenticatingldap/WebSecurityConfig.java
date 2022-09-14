@@ -25,7 +25,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.userDnPatterns("uid={0},ou=people")
 				.groupSearchBase("ou=groups")
 				.contextSource()
-					.url("ldap://localhost:8389/dc=springframework,dc=org")
+					.url("ldap://localhost:8390/dc=springframework,dc=org")
 					.and()
 				.passwordCompare()
 					.passwordEncoder(new BCryptPasswordEncoder())
